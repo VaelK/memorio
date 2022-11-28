@@ -39,6 +39,9 @@ To track a function IO, decorate it with memorio like this:
     
     Running f(1)
 
+When the tracked function is called for the second time with the same input, it does not process the function but
+returns the saved result.
+
 .. doctest::
 
     >>> print(f(1))
